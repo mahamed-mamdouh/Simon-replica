@@ -1,0 +1,399 @@
+:root{
+    --mainColor: teal;
+    --indigoColor: indigo;
+    --blueColor: blue;
+    --purpleColor: purple;
+    --redColor: red;
+    --purpleColor: purple;
+    --greenColor: green;
+    --yellowColor: yellow;
+    --orangeColor: orange;
+    --brownColor: brown;
+}
+body{
+    font-family: Poppins,sans-serif;
+    margin: 0;
+}
+.navbar{
+    background-color: transparent;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 5;
+}
+.navbar ul{
+    padding-inline-start: 0px;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+.navbar ul li{
+    padding:10px;
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.navbar ul li a.active{
+    color: #473EBC;
+    text-decoration: none;
+}
+.navbar ul li:hover{
+    color: #473EBC;
+}
+
+.navbar .icon i{
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.navbar .social-icons-twitter i:hover{
+    color: #24A3F1;
+}
+.navbar .social-icons-facebook i:hover{
+    color: #415E9B;
+}
+.navbar .social-icons-dribbble i:hover{
+    color: #C52A66;
+}
+
+.homeimg{
+    background-attachment: fixed;
+    filter: brightness(0.4);
+    height: 100vh;
+    width: 100vw;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+}
+section{
+    overflow: hidden;
+}
+.content{
+    padding: 100px;
+}
+.content p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.content h1{
+    font-size: 60px;
+}
+.content h1 span{
+    position: relative;
+}
+
+.content h1 span::before{
+    content: "I'm Simone Olivia.";
+    animation: text 20s infinite; 
+}
+.content h1 span::after{
+    content: "";
+    position: absolute;
+    border-left: 10px solid  white ;
+    width: calc(100% + 20px);
+    height: 70%;
+    animation: writer 0.4s infinite , typing 20s steps(20) infinite;
+    animation-direction: alternate;
+}
+
+@keyframes writer{
+    to{
+        border-left: 10px solid  transparent ;
+    }
+}
+
+@keyframes text{
+    0%,25%{
+        content: "I'm Simone Olivia.";
+    }
+    26%,50%{
+        content: "I'm a freelancer.";
+    }
+    51%,75%{
+        content: "I'm a Photographer.";
+    }
+    76%, 100%{
+        content: "I'm a Designer.";
+    }
+}
+
+@keyframes typing{
+    10%,15%,30%,35%,50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%,20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 20px);
+    }
+}
+.pghome{
+    height: 100vh;
+}
+.pg1{
+    background-color: #24A3F1;
+    height: 100vh;
+}
+.pghome .hiremebtn{
+    background-color: transparent;
+    font-size: larger;
+    border-color:#473EBC;
+    border:#473EBC solid 2px;
+    color:#473EBC;
+    border-radius: 40px;
+    width: 150px;
+    height: 60px;
+}  
+
+.content .arrow{
+    text-decoration: none;
+    bottom: 20px;
+    color: #fff;
+    font-size: 20px;
+    height: 32px;
+    left: 50%;
+    line-height: 32px;
+    margin-left: -16px;
+    position: absolute;
+    text-align: center;
+    width: 32px;
+    z-index: 3;
+}
+
+.section{
+    height: 100vh;
+    width: 100vw;
+}
+.section .contain {
+    position: relative;
+}
+
+.section p{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 1;
+    padding: 30px;
+}
+.section .contain p::after{
+    content: "";
+    width: 30%;
+    height: 3px;
+    background-color: #6F42C1;
+    position: absolute;
+    transform: translate(-180%, 1300%);
+}
+.section .contain h1{
+    height: 20%;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #ccc;
+    font-size: 80px;
+    left: 60%;
+    top: 15%;
+    transform: translate(-83%, -60%);
+}
+.section .container .btn{
+    color: white;
+    background-color: #6F42C1;
+    padding: 10px;
+    height: 50px;
+    width: 180px;
+    margin-left: 30px;
+}
+.section .row p{
+    font-size: medium;
+    font-weight: 300;
+    padding: 3px;
+    margin-bottom: 4px;
+    text-align: start;
+}
+
+.section .row ul{
+    list-style: none;
+}
+.section .row li{
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.inforow h1{
+    color: #8E9A9D;
+}
+.inforow .row p{
+    text-align: center;
+}
+.inforow .row .separet{
+    position: relative;
+}
+.inforow .row .separet::before{
+    content: "";
+    border-left: 1px dotted #e0dede;
+    height: 100%;
+    left: -1px;
+    top: 0;
+    position: absolute;
+}
+.section .container .row .Card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.section .container .row .Card h3{
+    padding: 10px;
+}
+
+.section .container .row .icon{
+    color: #6F42C1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 70px;
+    max-height: 100px;
+    width: 70px;
+    font-size: xx-large;
+}
+.education{
+    height: auto;
+    width: auto;
+}
+
+.w3-light-grey{
+    background-color: #f1f1f1;
+}
+.w3-purple{
+    background-color: #6F42C1;
+    border-radius: 12px;
+}
+.resumebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color:#8E9A9D;
+    height: 50px;
+    width: 200px;
+    border: #8E9A9D solid;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.portfolio{
+    height: auto;
+    width: auto;
+}
+.portfolio .container{
+
+    padding: 40px 0;
+}
+.portfolio .imggrid{
+    display: flex;
+    gap: 20px;
+}
+.portfolio .container .imggrid .column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.portfolio .container .imggrid .column img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.testimoni .contain h1{
+    transform: translate(-73%,-50%);
+}
+.testimoni .container .stars span i{
+    text-align: left;
+}
+.testimoni ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.testimoni li{
+    text-align: center;
+    color: #6F42C1;
+    font-size: larger;
+    padding: 5px;
+}
+.section .endicons{
+    padding: 0;
+}
+.section .container .row .leftside ul li a{
+    text-decoration: none;
+}
+.section .endicons i{
+    color: #8E9A9D;
+    padding: 10px;
+    text-align: sta;
+}
+.section .endicons .fa-dribbble:hover{
+    color: #C52A66;
+}
+.section .endicons .fa-twitter:hover{
+    color: #24A3F1;
+}
+.section .endicons .fa-facebook-f:hover{
+    color: #473EBC;
+}
+.section .endicons .fa-google:hover{
+    color: #E65E3B;
+}
+.section .endicons .fa-github:hover{
+    color: #16181F;
+}
+
+.section .rightside input{
+    padding: 5px;
+    border-radius: 5px;
+    border: #8e9a9d5c solid 3px;
+}
+.section .rightside textarea{
+    padding: 5px;
+    border-radius: 5px;
+    border: #8e9a9d5c solid 3px;
+}
+.section .rightside .button{
+    border-radius: 30px;
+    border-color: transparent;
+    background-color: #6F42C1;
+    color: white;
+    height: 50px;
+    width: 190px;
+    transform: translate(0, -200%);
+}
+footer a{
+    text-decoration: none;
+}
+footer span{
+    color: #6F42C1;
+}
+footer p a {
+    color: black;
+    padding: 10px;
+}
+footer p a:hover{
+    color: #6F42C1;
+    transition: 0.2s;
+}
+.foot .container .row p a .separet::before {
+    content: "";
+    border-left: 1px dotted #e0dede;
+    height: 100%;
+    left: -1px;
+    top: 0;
+    position: absolute;
+}
